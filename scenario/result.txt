@@ -1,0 +1,51 @@
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '55692b94-d77c-4d77-bbb3-e057d46ade4e', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '565e0ad4-3ea4-43a5-9545-388e52df4bf1', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'ae8bb55b-b0c7-4fbe-9ff8-863588585303', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '63b1ec4c-c0ef-4e81-91b8-4b2b673c68f8', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '6d53eed5-2065-42b5-ad8b-0397ae4689cd', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '2a1d2883-fff7-4785-ba00-f288e3896625', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+Exception when calling AuthorizationV1Api->create_self_subject_rules_review: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'b0437da7-d696-45be-ba28-6802073af42c', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Warning': '299 - "unknown field \\"spec.resourceAttributes\\""', 'X-Kubernetes-Pf-Flowschema-Uid': '8f0ced98-dead-4e60-93b9-a65c6a91e8bc', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e2a0f74a-c9b3-417f-9a3c-e860f4a1cb1c', 'Date': 'Mon, 04 Nov 2024 16:43:12 GMT', 'Content-Length': '138'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"no namespace on request","reason":"BadRequest","code":400}
+
+
+
+None
+10.42.1.21

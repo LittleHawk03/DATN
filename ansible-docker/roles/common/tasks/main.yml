@@ -1,0 +1,56 @@
+---
+- name: update packages using yum
+  yum:
+    name: '*'
+    state: latest
+    update_cache: yes
+    update_only: yes
+  tags:
+  - docker  
+
+
+- name: install yum yum dependency
+  yum:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ yum_dependencies }}"
+  tags:
+  - docker
+
+# - name: add docker repository 
+#   yum_repository:
+#     name: docker
+#     description: docker yum repository
+#     baseurl: "{{ docker_repository }}"
+#     state: present
+
+- name: add docker repository
+  command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  tags:
+  - docker
+
+- name: install docker dependency 
+  yum:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ docker_packages }}"
+  tags:
+  - docker
+
+- name: start and enable docker
+  systemd_service:
+    name: docker
+    state: started
+    enabled: yes
+    daemon_reload: true
+  tags:
+  - docker
+
+- name: reload deamon 
+  systemd_service:
+    name: docker
+    state: restarted
+  tags:
+  - docker     

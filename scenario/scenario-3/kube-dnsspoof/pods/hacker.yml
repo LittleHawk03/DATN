@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hacker
+spec:
+  nodeName: interdata.1723606891
+  containers:
+    - name: hacker
+      image: danielsagi/kube-dnsspoof

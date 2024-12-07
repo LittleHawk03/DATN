@@ -1,0 +1,14 @@
+---
+- name: install docker
+  hosts: all 
+  gather_facts: true
+  become: true
+  roles:
+    - common
+
+- name: install kubectl 
+  hosts: all
+  gather_facts: true
+  become: true
+  roles:
+    - kubectl

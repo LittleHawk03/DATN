@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: compromised-pod-2
+  namespace: scenario-1
+spec:
+  nodeName: interdata.1721187715
+  containers:
+    - command: ["/bin/bash", "-c", "sleep INFINITE"]
+      image: littlehawk03/alpine:v2-bash
+      name: pods-simple-container
+  serviceAccount: service-account-pod-create

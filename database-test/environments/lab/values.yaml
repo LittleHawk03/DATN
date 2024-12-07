@@ -1,0 +1,38 @@
+
+global:
+  auth:
+      secretKeys:
+        adminPasswordKey: "postgres"
+        userPasswordKey: "postgres"
+        replicationPasswordKey: "postgres"
+
+auth:
+  postgresPassword: "postgres"
+  username: "postgres"
+  password: "postgres"
+  database: "test"
+
+containerPorts:
+  postgresql: 5432
+
+architecture: replication
+
+replication:
+  ## @param replication.synchronousCommit Set synchronous commit mode. Allowed values: `on`, `remote_apply`, `remote_write`, `local` and `off`
+  ## @param replication.numSynchronousReplicas Number of replicas that will have synchronous replication. Note: Cannot be greater than `readReplicas.replicaCount`.
+  ## ref: https://www.postgresql.org/docs/current/runtime-config-wal.html#GUC-SYNCHRONOUS-COMMIT
+  ##
+  synchronousCommit: "on"
+  numSynchronousReplicas: 2
+  ## @param replication.applicationName Cluster application name. Useful for advanced replication settings
+  ##
+  applicationName: my_application
+
+primary:
+  resources:
+    requests:
+      cpu: 1
+      memory: 512Mi
+  service:
+    ports:
+        postgresql: 5432

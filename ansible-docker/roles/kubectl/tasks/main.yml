@@ -1,0 +1,18 @@
+---
+- name: Copy file to destination
+  copy:
+    src: kubernetes.repo
+    dest: /etc/yum.repos.d/kubernetes.repo
+    owner: root
+    group: root
+    mode: '0644'
+  tags:
+  - kubectl
+
+- name: install yum yum dependency
+  yum:
+    name: kubectl
+    state: present
+    update_cache: yes
+  tags:
+  - kubectl

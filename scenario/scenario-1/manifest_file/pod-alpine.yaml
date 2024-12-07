@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine
+  namespace: scenario-1
+spec:
+  nodeName: interdata.1721798761
+  containers:
+    - name: alpine
+      image: alpine
+      command: ["sh", "-c", "sleep infinity"]
+  serviceAccount: default

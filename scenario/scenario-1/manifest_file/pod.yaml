@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: compromised-pod
+  namespace: scenario-1
+spec:
+  nodeName: interdata.1721187715
+  containers:
+    - command: ["/bin/busybox", "sleep", "infinity"]
+      image: alpine
+      name: pods-simple-container
+  serviceAccount: service-account-pod-create
