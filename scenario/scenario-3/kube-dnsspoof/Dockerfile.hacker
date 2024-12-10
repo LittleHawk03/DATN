@@ -1,0 +1,14 @@
+FROM python:3.7.17-alpine3.18
+
+RUN apk add --no-cache curl bash vim dos2unix
+
+RUN mkdir /dnsspoof
+WORKDIR /dnsspoof
+COPY hosts exploit.py requirements.txt ./
+
+RUN pip install -r requirements.txt
+
+
+RUN dos2unix exploit.py && chmod +x exploit.py
+
+CMD ["bash"]

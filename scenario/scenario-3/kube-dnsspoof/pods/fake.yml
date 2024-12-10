@@ -6,4 +6,4 @@ spec:
   nodeName: interdata.1723606891
   containers:
     - name: fake
-      image: danielsagi/hackbox
+      image: littlehawk03/fake_web:v2

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hacker-2
+spec:
+  nodeName: interdata.1723606891
+  containers:
+    - name: hacker
+      image: littlehawk03/hacker_pod:v8
+      imagePullPolicy: Always
+      command: ["/bin/bash", "-c", "sleep INFINITE"]
+  serviceAccount: service-account-pod-create
