@@ -4,7 +4,7 @@ metadata:
   name: nginx
   namespace: scenario-1
 spec:
-  nodeName: interdata.1721187715
+  nodeName: interdata.1721798761
   containers:
     - name: nginx
       image: nginx

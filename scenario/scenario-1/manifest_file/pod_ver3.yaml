@@ -4,10 +4,10 @@ metadata:
   name: compromised-pod-3
   namespace: scenario-1
 spec:
-  nodeName: interdata.1721187715
+  nodeName: interdata.1721798761
   containers:
     - command: ["/bin/bash", "-c", "sleep INFINITE"]
-      image: littlehawk03/alpine-python:v9-bash
+      image: littlehawk03/alpine-python:v10-bash
       imagePullPolicy: Always
       name: pods-simple-container
   serviceAccount: service-account-pod-create

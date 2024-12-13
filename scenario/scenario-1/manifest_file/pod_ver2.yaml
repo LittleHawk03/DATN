@@ -4,7 +4,7 @@ metadata:
   name: compromised-pod-2
   namespace: scenario-1
 spec:
-  nodeName: interdata.1721187715
+  nodeName: interdata.1721798761
   containers:
     - command: ["/bin/bash", "-c", "sleep INFINITE"]
       image: littlehawk03/alpine:v2-bash

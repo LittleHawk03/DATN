@@ -97,4 +97,12 @@ spec:
   vxlanMode: Always
   natOutgoing: true
 
+sudo firewall-cmd --zone=public --add-port=6443/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=30000/tcp --permanent
+firewall-cmd --reload
 
+
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="103.20.14.55" port port="9100" protocol="tcp" accept'
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="103.20.14.56" port port="9100" protocol="tcp" accept'
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="103.20.15.56" port port="9100" protocol="tcp" accept'
+sudo firewall-cmd --reload
